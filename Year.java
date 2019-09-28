@@ -49,7 +49,6 @@ public class Year {
             b=sc.nextInt();
 
             String day =ob.solution(a,b);
-
             System.out.println(day);
         }
 
