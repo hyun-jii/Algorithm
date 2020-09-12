@@ -14,7 +14,6 @@ class Solution {
                 leftDay++;
             }
             leftDays.add(leftDay);
-            leftDay = 0;
         }
 
         int count = 1;
