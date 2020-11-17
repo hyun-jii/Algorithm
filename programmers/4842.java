@@ -13,6 +13,7 @@
 테스트 12 〉	통과 (0.01ms, 52.5MB)
 테스트 13 〉	통과 (0.02ms, 52.2MB)
 */
+
 class Solution {
     public int[] solution(int brown, int yellow) {
         int[] answer = new int[2];
