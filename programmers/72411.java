@@ -35,8 +35,7 @@ class Solution {
                 menu[j] = orders[i].substring(j,j+1);
             }
             
-            boolean[] visited = new boolean[menu.length];
-            
+            boolean[] visited = new boolean[menu.length];      
             for(int r = 0; r < course.length ; r++) {
                 Arrays.sort(menu);
                 comb(menu, visited, 0, course[r]);
@@ -44,10 +43,8 @@ class Solution {
         }
         
         List<String> list = new ArrayList<>();
-        
         for(int i=0; i<course.length; i++) {
             int max = 0;
-            
             for(String key : courseMenu.keySet()) {
                 if(key.length() == course[i]) {
                     max = Math.max(max, courseMenu.get(key));
@@ -59,7 +56,6 @@ class Solution {
                 }
             }
         }
-        
         String[] answer = new String[list.size()];
         int size = 0;
         for(String i : list) {
@@ -79,7 +75,6 @@ class Solution {
                 }
             }
             courseMenu.put(result, courseMenu.getOrDefault(result, 0) +1);
-            
             return;
         }
         if(depth == arr.length) {
