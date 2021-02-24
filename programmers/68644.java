@@ -23,7 +23,6 @@ class Solution {
                 }
             }
         }
-        Collections.sort(answer);
-        return answer.stream().mapToInt(i->i).toArray();
+        return answer.stream().sorted().mapToInt(i->i).toArray();
     }
 }
